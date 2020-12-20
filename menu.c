@@ -33,7 +33,7 @@ void menu_two() {
 
 int printAllMenu() {
     printf("\n====Welcome====\n");
-    printf("1. Bitwise representation of a number\n2. Generating words from its elements\n");
+    printf("1. Bitwise representation of a number\n2. Generating words from its elements\n3.Exit\n");
     return getUserEnter("Please, select menu element");
 }
 
@@ -45,6 +45,9 @@ void buildMenuResult(int userEnter) {
         case 2:
             menu_two();
             break;
+        case 3:
+            printf("Bye!\n");
+            exit(0);
         default:
             printf("Unknown menu element");
             break;
